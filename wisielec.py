@@ -94,6 +94,14 @@ while True:
     #zgadywanie
     a=input('Zgadnij literę albo hasło:')
 
+    # sprawdzenie czy litera już jest
+    i = 0
+    while len(wylosowany_wyraz) > i:
+        if wylosowany_wyraz[i] == wyrazx[i]:
+            print('Litera "'+wyrazx[i]+'" już jest!')
+            break
+        i = i + 1
+
     #sprawdzenie czy litera jest w slowie i zgadnął
     i = 0
     while len(wylosowany_wyraz)>i:
