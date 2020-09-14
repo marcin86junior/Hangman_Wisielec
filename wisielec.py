@@ -113,7 +113,7 @@ while True:
 
     #sprawdzenie czy zgadął wyraz
     if a==wylosowany_wyraz:
-        print('Zgadłeś wyraz! Wygrales!' + ' Haslo to: "' + wylosowany_wyraz + '".')
+        print('Zgadłeś wyraz! Wygrales!' + ' Haslo to "' + wylosowany_wyraz + '".')
         czy_zgadnal = True
         koniec_gry = 'tak'
 
@@ -123,12 +123,12 @@ while True:
         print('Nie zgadłeś!')
         narysuj_obrazek()
         if ilosc_zyc==0:
-            print('Przegrales!' + ' Haslo to: "' + wylosowany_wyraz + '"')
+            print('Przegrales!' + ' Haslo to "' + wylosowany_wyraz + '".')
             koniec_gry='tak'
 
     #sprawdzenie czy wygrales (plus zaczcie nowej gry)
     if ''.join(wyrazx) == wylosowany_wyraz:
-        print('Zgadłeś literę! Wygrales!' + ' Haslo to: "' + wylosowany_wyraz + '"')
+        print('Zgadłeś literę! Wygrales!' + ' Haslo to "' + wylosowany_wyraz + '".')
         koniec_gry = 'tak'
 
     #czy koniec jest gry?
